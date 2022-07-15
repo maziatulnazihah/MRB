@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head
+	<link rel="stylesheet" href="style1.css">
+	<title>Search Recipe</title>
+	</head>
+	
+	<body>
+	<header>
+	
+		<div class = "main">
+		<br>
+		<ul>
+		<li class="active"><a href= "#">Homepage</a></li>
+		 <li href=""><a href= "#">About</a></li>
+		 <li><a href= "#">Contact us</a></li>
+		  <li><a href= "http://localhost/tutorial/login%20new.html">Log out</a></li>
+		 </ul>
+		</div>
+		
+		
+		<br><br><br>
+		
+		
+		<h1>SEARCH RECIPE</h1>
+		
+		<br><br><br>
+		<form action="s.php" method="POST">
+		<div id="searchbox">
+			<input placeholder="Search" type="text">
+			<button>SEARCH</button>
+		</div>
+		
+		<table>
+			<tr>
+					<th>recipe id</th>
+					<th>categories</th>
+					<th>title</th>
+					<th>ingredients</th>
+					<th>duration</th>
+					<th>steps</th>
+					<th>serving</th>
+					<th>user</th>
+			
+			</tr>
+		</table>
+	</form>
+		<?php while($row = mysqli_fetch_array($search_result)):?>
+				<tr>
+					<td><?php echo $row['r_id'];?></td>
+					<td><?php echo $row['categories'];?></td>
+					<td><?php echo $row['title'];?></td>
+					<td><?php echo $row['ingredients'];?></td>
+					<td><?php echo $row['duration'];?></td>
+					<td><?php echo $row['steps'];?></td>
+					<td><?php echo $row['serving'];?></td>
+					<td><?php echo $row['user'];?></td>
+				</tr>
+			<style>
+		
+			 *{
+			margin: 0;
+			padding: 0;
+			font-family: verdana;
+			box-sizing: border-box;
+			}
+			
+			header{
+			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(73.jpg);
+			height: 200vh;
+			background-size: 1600px 1250px;
+			background-position: center;
+			}
+			
+			ul{
+			float: left;
+			list-style-type:none;
+			}
+			
+			ul li{
+			display: inline-block;
+			}
+			
+			ul li a{
+			text-decoration: none;
+			color: #fff;
+			padding: 5px 20px;
+			border: 1px solid #fff;
+			transition: 0.6s ease;
+			}
+			
+			ul li a:hover{
+			background-color:#fff;
+			color:#000;
+			}
+			
+			u li.active a{
+			background-color:#fff;
+			color:#000;
+			}
+			
+			.main{
+			max-width: 1200px;
+			margin: auto;
+			}
+			
+			h1{
+			text-align: center;
+			font-size: 50px;
+			color: #fff;
+			font-weight: bold;
+			}
+			
+			#searchbox{
+			width: 50%;
+			margin: auto;
+			}
+			
+			#searchbox input,button{
+			width: 75%;
+			border: 2px solid white;
+			border-right: 18px;
+			padding: 12px;
+			background: transparent;
+			color: white;
+			}
+			
+			#searchbox button{
+			width: 25%;
+			background: #eee;
+			color: black;
+			float: right;
+			border-left: 0px;
+			}
+			
+			#searchbox button:hover{
+			opacity:.8;
+			}
+			
+			#searchbox input:hover{
+			opacity:.8;
+			}
+			
+			table,tr,th,td{
+			border: 1px solid;
+			}
+			
+			
+			</style>
+	</body>
+	
+
+
+<html>

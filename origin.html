@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head
+	<link rel="stylesheet" href="style1.css">
+	<title>Origin Food</title>
+	</head>
+	
+	<body>
+	<header>
+	
+		<div class = "main">
+		<br>
+		<ul>
+		<li class="active"><a href= "http://localhost/tutorial/homepage.html">Homepage</a></li>
+		 <li><a href= "http://localhost/tutorial/cont.php">Contact us</a></li>
+		  <li><a href= "http://localhost/tutorial/login%20new.html">Log out</a></li>
+		 </ul>
+		</div>
+		
+		
+		<br><br><br>
+		
+		
+		<h1>ORIGIN FOOD</h1>
+		
+		<div class="container">
+
+			<div class="box">
+				<div class="imgBox">
+					<img src="m15.jpg">
+			</div>
+			<div class="details">
+				<div class="content">
+				<a href ="http://localhost/tutorial/mf.html">
+				<h2>Malaysian Food</h2></a>
+				<p>this categories content hundreds of recipe for breakfast</p>
+				
+				</div>
+			</div>
+		</div>
+			
+			<div class="box">
+				<div class="imgBox">
+					<img src="M12.jpg">
+			</div>
+			<div class="details">
+				<div class="content">
+				<a href ="http://localhost/tutorial/cf.html">
+				<h2>Chinese Food</h2></a>
+				<p>this categories content hundreds of recipe for lunch</p>
+				
+				</div>
+		    </div>
+		</div>
+			
+			<div class="box">
+			<div class="imgBox">
+					<img src="M11.jpg">
+			</div>
+			<div class="details">
+				<div class="content">
+				<a href="http://localhost/tutorial/if.html">
+				<h2>Indian Food</h2></a>
+				<p>this categories content hundreds of recipe for Dinner</p>
+				</div>
+			</div>
+			
+			</div>
+			
+			<div class="box">
+			<div class="imgBox">
+					<img src="mf3.jpg">
+			</div>
+			<div class="details">
+				<div class="content">
+				<a href="http://localhost/tutorial/kf.html">
+				<h2>Korean Food</h2></a>
+				<p>this categories content hundreds of recipe for tea time</p>
+				</div>
+			</div>
+			
+			</div>
+			
+			<div class="box">
+			<div class="imgBox">
+					<img src="M14.jpg">
+			</div>
+			<div class="details">
+				<div class="content">
+				<a href="http://localhost/tutorial/jf.html">
+				<h2>Japanese Food</h2></a>
+				<p>this categories content hundreds of recipe for desserts</p>
+				</div>
+			</div>
+			</div>
+			
+			<div class="box">
+			<div class="imgBox">
+					<img src="mf5.jpg">
+			</div>
+			<div class="details">
+				<div class="content">
+				<a href="http://localhost/tutorial/af.html">
+				<h2>Arabian Food</h2></a>
+				<p>this categories content hundreds of recipe for Cookies</p>
+				</div>
+			</div>
+			</div>
+			
+			<div class="box">
+			<div class="imgBox">
+					<img src="mf6.jpg">
+			</div>
+			<div class="details">
+				<div class="content">
+				<a href="http://localhost/tutorial/sf.html">
+				<h2>Singapore Food</h2></a>
+				<p>this categories content hundreds of recipe for Healthy Food</p>
+				</div>
+			</div>
+			</div>
+			
+			<div class="box">
+			<div class="imgBox">
+					<img src="M13.jpg">
+			</div>
+			<div class="details">
+				<div class="content">
+				<a href="http://localhost/tutorial/hkf.html">
+				<h2>Hong Kong Food</h2></a>
+				<p>this categories content hundreds of recipe for Drinks And Juices</p>
+				</div>
+			</div>
+		  </div>
+		</div>
+			
+		</div>	
+		</div>
+		
+			<style>
+		
+			 *{
+			margin: 0;
+			padding: 0;
+			font-family: verdana;
+			}
+			
+			header{
+			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url(65.jpg);
+			height: 190vh;
+			background-size: 1600px 1250px;
+			background-position: center;
+			}
+			
+			ul{
+			float: left;
+			list-style-type:none;
+			}
+			
+			ul li{
+			display: inline-block;
+			}
+			
+			ul li a{
+			text-decoration: none;
+			color: #fff;
+			padding: 5px 20px;
+			border: 1px solid #fff;
+			transition: 0.6s ease;
+			}
+			
+			ul li a:hover{
+			background-color:#fff;
+			color:#000;
+			}
+			
+			u li.active a{
+			background-color:#fff;
+			color:#000;
+			}
+			
+			.main{
+			max-width: 1200px;
+			margin: auto;
+			}
+			
+			h1{
+			text-align: center;
+			font-size: 50px;
+			color: #fff;
+			font-weight: bold;
+			}
+			
+			.container{
+			width: 1280px;
+			margin: 70px auto 0;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			}
+			
+			.container .box{
+			position: relative;
+			width: 300px;
+			height: 300px;
+			background: #ff0;
+			margin: 10px;
+			box-sizing: border-box;
+			display: inline-block;
+			}
+			
+			.container .box .imgBox{
+			position: relative;
+			overflow: hidden;
+			}
+			
+			.container .box .imgBox img{
+			max-width: 100%;
+			transition: transform 2s;
+			}
+			
+			.container .box:hover .imgBox img{
+			transform: scale(1.2);
+			}
+			
+			.container .box .details{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			bottom: 10px;
+			right: 10px;
+			background: rgba(0,0,0,.8);
+			transform: scaleY(0);
+			transition: transform .5s;
+			}
+			
+			.container .box:hover .details{
+			transform: scaleY(1);
+			}
+			
+			.container .box .details .content{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+			padding: 15px;
+			color: #fff;
+			}
+			
+			.container .box .details .content h2{
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+			color: #ff0;
+			}
+			
+			.container .box .details .content p{
+			margin: 10px 0 0;
+			padding: 0;
+			}
+			
+			</style>
+	</body>
+	
+
+
+<html>

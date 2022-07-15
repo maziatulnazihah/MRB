@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style2.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+<title>Add Recipe</title>
+</head>
+
+<body>
+
+<div class = "main">
+<ul>
+<li class="active"><a href= "http://localhost/tutorial/homepage.html">Homepage</a></li>
+<li href=""><a href= "#">About</a></li>
+<li><a href= "#">Contact us</a></li>
+ <li><a href= "http://localhost/tutorial/login%20new.html">Log out</a></li>
+</ul>
+</div>
+
+<br><br><br>
+
+<form action="mainphp.php" method="POST">
+
+
+<div class="pc-tab">
+<input checked="checked" id="tab1" type="radio" name="pct"/>
+
+<nav>
+<ul>
+<li class="tab1">
+<label for="tab1">Add Recipe</label>
+</li>
+</ul>
+</nav>
+<section>
+<div class="tab1">
+
+
+<p>
+<font color="black">
+<br>
+
+<center>
+<table>
+<tr>
+<td>Categories: </td>
+<td>
+<select input="input-field" name="categories" placeholder="Category">
+ <option value="breakfast">1-breakfast</option>
+ <option value="lunch">2-lunch</option>
+ <option value="dinner">3-dinner</option>
+ <option value="tea time">4-tea time</option>
+ <option value="dessert">5-dessert</option>
+ <option value="cookies">6-cookies</option>
+ <option value="healthy food">7-healthy food</option>
+ <option value="drink&juices">8-drinks and juices</option>
+
+   </select>
+</td>
+
+</tr>
+
+
+<tr>
+<td>Title of Recipe: </td>
+<td>
+<textarea cols="40" rows="1"input type="text" name="title" placeholder="Title"></textarea><br>
+</td>
+
+</tr>
+<tr>
+<td>Ingredients:</td>
+<td>
+<textarea cols="50" rows="5"input type="text"
+placeholder="ingredients" name="ingredients"></textarea><br>
+</td>
+</tr>
+
+<tr>
+<td>Duration:</td>
+<td>
+<textarea cols="40" rows="1" input type="text" name="duration" placeholder="Duration" name="duration"></textarea>
+</td>
+</tr>
+
+<tr>
+<td>Steps:</td>
+<td>
+<textarea cols="50" rows="5"input type="text" name="steps"
+placeholder="steps" name="steps"></textarea><br>
+</td>
+</tr>
+
+<tr>
+<td>Serving Size: </td>
+<td>
+<input type="number" name="serving" placeholder="Serving Size"><br>
+</td>
+</tr>
+<tr>
+<td>Username: </td>
+<td>
+<input type="text" name="user" ><br>
+</td>
+</tr>
+<center><input type="file" id="file" accept="image/*">
+<label for="file">
+<i class="material-icons">
+add_photo_alternate
+</i> &nbsp;
+
+Choose a photo
+</center></label>
+
+<br>
+
+<h3><center>*please choose image from your file</center></h3>
+
+<br>
+
+
+
+
+</font>
+</table>
+</p>
+</center>
+
+<center>
+<input type="submit" class="btn" name="insert" value="ADD">
+
+<input type="submit" class="btn" name="delete" value="DELETE">
+
+<input type="submit" class="btn" name="update" value="UPDATE">
+
+<input type="submit" class="btn" name="view" value="VIEW">
+
+
+<center>
+</form>
+</body>
+</html>

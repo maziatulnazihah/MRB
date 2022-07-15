@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="style1.css">
+		<title>Register Form</title>
+	</head>
+	
+	<body>
+		
+		<div class="w3-container">
+		<div class=w3-display-container w3-text-white>
+			<img src="18.jpg"alt="M1" style="width:100%">
+		<div class="w3-padding w3-display-topmiddle">
+		<br><br><br><br>
+		<center>
+			<p>
+			<b>
+			<font color="white"face="Verdana">
+			<h2>REGISTERATION FORM</h2>
+			</b>
+			</p>
+			</font>
+			
+			
+			<div class="profile">
+			<font color="white">
+			
+			
+				<img src="profile.png"width="200" height="200" alt="avatar"class="profile_image" style="border-radius:50%">
+
+				<div class="profile_hover"></div>
+				<div class="profile_closure"></div>
+				<div class="profile_text">My Photo</div>
+				<div class="profile_setting"><i class="fas fa-cog"></i></div>
+				
+			</font>
+			</div>
+			
+			<form action="register.php" method="post">
+			
+			<font color="white">
+			
+				<table>
+					<tr>
+					  <td><label class="header">Profile Photo:</label></td>
+					  <td>
+						<input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+					  </td>
+					</tr>
+					   
+					<tr>
+						<td>Username:</td>
+						<td>
+							<input type="text"name="user"
+							placeholder="Enter Name Here">
+						</td>
+					
+					
+					</tr>
+						
+					<tr>
+						<td>Password:</td>
+						<td>
+							<input type="Password"name="User_pass"
+							placeholder="Enter Password Here">
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Email:</td>
+						<td>
+							<input type="Email"name="mail"
+							placeholder="Enter email here">
+						<td>
+					</tr>
+					
+					<tr>
+						<td>Phone Number:</td>
+						
+						
+							<input type="phone" name="mob_digits"
+							placeholder="Enter phone number here"maxlength="11">
+					</tr>
+						<td>Birth Date:</td>
+						<td>
+							<input type="date" name="birth_date"
+							placeholder="Enter birth date here">
+					
+					<tr>
+						<td>Gender:</td>
+						<td>
+						
+							<input type="radio" name="gender">Male
+							<input type="radio" name="gender">Female
+						</td>
+						
+					</tr>
+					
+
+					</font>
+					</table>
+				</form>
+					
+					<div align="center">
+							<input type="submit"name="Register.btn"
+								value="Register">
+					</div>
+					
+					<font color="white">
+					Already a user? <a href="login new.html"><font color="blue">Login Here
+								</a>
+				
+			</center>
+		</body>
+	</html>
+					

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style2.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		
+		
+		<title>Add Recipe</title>		
+	</head>
+	
+	<body>
+	
+	<div class = "main">
+		<ul>
+		<li class="active"><a href= "http://localhost/tutorial/homepage.html">Homepage</a></li>
+		 <li href=""><a href= "#">About</a></li>
+		 <li><a href= "#">Contact us</a></li>
+		  <li><a href= "http://localhost/tutorial/login%20new.html">Log out</a></li>
+		 </ul>
+		</div>
+		
+		<br><br><br>
+		
+		<form action="cc.php" method="POST">
+		
+		
+		<div class="pc-tab">
+			<input checked="checked" id="tab1" type="radio" name="pct"/>
+			
+			<nav>
+			<ul>
+				<li class="tab1">
+					<label for="tab1">Add Recipe</label>
+				</li>
+			</ul>
+			</nav>
+		<section>
+			<div class="tab1">
+			
+	
+			<p>
+			<font color="black">
+			<br>
+					
+			
+					<center><input type="file" id="file" accept="image/*">
+					<label for="file">
+						<i class="material-icons">
+					add_photo_alternate
+						</i> &nbsp;
+									
+						Choose a photo
+					</center></label>
+					
+					<br>
+					
+					<h3><center>*please choose image from your file</center></h3>
+					
+					<br>
+					
+					<center>
+					<table>
+					<tr>
+						<td>Recipe ID: </td>
+						<td>
+							<input type="number" name="id" placeholder="eg:14"></textarea><br>
+						</td>
+
+					</tr>
+					
+					<tr>
+						<td>Title of Recipe: </td>
+						<td>
+							<textarea cols="40" rows="1"input type="text" name="title" placeholder="Title"></textarea><br>
+						</td>
+
+					</tr>
+										
+							
+					<tr>
+						<td>Ingredients:</td>
+						<td>
+						<textarea cols="40" rows="1"input type="text" name="ingredients" maxlength="4" size="50" placeholder="Ingredients"></textarea><br>
+						</td>
+					</tr>	
+							
+					<tr>
+						<td>Duration:</td>
+						<td>
+						<textarea cols="40" rows="1" input type="text" name="duration" placeholder="Duration"></textarea>
+						</td>
+					</tr>		
+					
+					<tr>
+						<td>Steps:</td>
+						<td>
+							<textarea cols="50" rows="5"input type="text" name="steps"
+							placeholder="steps"></textarea><br>
+						</td>
+					</tr>
+						
+					<tr>
+						<td>Serving Size: </td>
+						<td>		
+							<input type="number" name="serving" placeholder="Serving Size"><br>
+						</td>
+					</tr>
+
+				</font>
+			</table>
+			</p>
+			</center>	
+					
+					<center>
+						<input type="submit" class="btn" name="insert" value="ADD">
+						
+						<input type="submit" class="btn" name="delete" value="DELETE">
+						
+						<input type="submit" class="btn" name="update" value="UPDATE">
+						
+						<input type="submit" class="btn" name="view" value="VIEW">
+						
+						<input type="submit" class="btn" name="search" value="SEARCH">
+					
+					<center>
+		</form>
+	</body>
+</html>
